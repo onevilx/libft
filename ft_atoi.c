@@ -5,42 +5,42 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: yaboukir <yaboukir@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/25 16:12:43 by yaboukir          #+#    #+#             */
-/*   Updated: 2024/10/28 16:18:37 by yaboukir         ###   ########.fr       */
+/*   Created: 2024/11/02 18:39:14 by yaboukir          #+#    #+#             */
+/*   Updated: 2024/11/03 16:00:06 by yaboukir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int ft_atoi(const char *str)
+static	int	ft_whitespaces(int c)
 {
-    int i;
-    int sign;
-    long int checker;
-    long int res;
+	if (c == ' ' || (c >= 9 && c <= 13))
+		return (1);
+	return (0);
+}
 
-    i = 0;
-    res = 0;
-    sign = 1;
-    while (str[i] == 32 || (str[i] >= 9 && str[i] <= 13))
-    {
-        i++;
-    }
-    if (str[i] == '-' || str[i] == '+')
-    {
-        if (str[i] == '-')
-        sign = -1;
-        i++;
-    }
-    while (str[i] >= 48 && str[i]<= 57)
-    {
-        checker = res;
-        res = res * 10 + (str[i] - 48);
-        if (checker != res / 10 && sign == 1)
-        return (-1);
-        if (checker != res / 10 && sign == -1)
-        return (0);
-        i++;
-    }
-    return (sign * res);
+int	ft_atoi(const char *str)
+{
+	size_t	i;
+	size_t	sign;
+	size_t	result;
+
+	i = 0;
+	sign = 1;
+	result = 0;
+	while (ft_whitespaces(str[i]))
+		i++;
+	if (str[i] == '+' && str[i + 1] != '-')
+		i++;
+	else if (str[i] == '-')
+	{
+		sign = -1;
+		i++;
+	}
+	while (str[i] && str[i] >= '0' && str[i] <= '9')
+	{
+		result = result * 10 + (str[i] - '0');
+		i++;
+	}
+	return (result * sign);
 }

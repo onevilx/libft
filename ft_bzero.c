@@ -6,19 +6,20 @@
 /*   By: yaboukir <yaboukir@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/25 18:28:00 by yaboukir          #+#    #+#             */
-/*   Updated: 2024/10/25 23:04:19 by yaboukir         ###   ########.fr       */
+/*   Updated: 2024/11/03 16:10:01 by yaboukir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void    ft_bzero(void *s, size_t n)
+void	ft_bzero(void *s, size_t n)
 {
-    char *tmp_ptr;
-    tmp_ptr = (char *) s;
-    while (n > 0)
-    {
-        *(tmp_ptr++) = 0;
-        n--;
-    }
+	char	*tmp_ptr;
+
+	tmp_ptr = (char *) s;
+	while (n > 0)
+	{
+		*(tmp_ptr++) = 0;
+		n--;
+	}
 }
