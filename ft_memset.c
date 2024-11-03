@@ -6,7 +6,7 @@
 /*   By: yaboukir <yaboukir@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/24 14:41:41 by yaboukir          #+#    #+#             */
-/*   Updated: 2024/11/03 17:23:45 by yaboukir         ###   ########.fr       */
+/*   Updated: 2024/11/03 21:58:00 by yaboukir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,7 +41,7 @@ void	*ft_memset(void *b, int c, size_t len)
     //int i = 69;
     // ft_memset(&i, 0, 4);
     // ft_memset(&i, 57, 1);
-    // ft_memset((char *)&i + 1, 5, 1);
+    // ft_memset((char *)&i + 1, 5, 1); // typecasted
     // printf("{%d}\n", i);
     //output = {-1337}
     //____________________________________________
