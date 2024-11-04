@@ -6,17 +6,17 @@
 /*   By: yaboukir <yaboukir@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/25 11:09:36 by yaboukir          #+#    #+#             */
-/*   Updated: 2024/11/04 21:09:53 by yaboukir         ###   ########.fr       */
+/*   Updated: 2024/11/04 21:16:57 by yaboukir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBFT_H
 # define LIBFT_H
 
-# include <stdio.h>
+# include <stdio.h> // just for testing progam, it is forbbiden ;)
 # include <stdlib.h>
 # include <unistd.h>
-# include <stddef.h>
+# include <stddef.h> // just for testing progam, it is forbbiden ;)
 
 int			ft_isalnum(int c);
 int			ft_isalpha(int c);
