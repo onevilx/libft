@@ -6,7 +6,7 @@
 #    By: yaboukir <yaboukir@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/10/28 17:43:12 by yaboukir          #+#    #+#              #
-#    Updated: 2024/11/05 14:45:38 by yaboukir         ###   ########.fr        #
+#    Updated: 2024/11/05 22:43:34 by yaboukir         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -16,21 +16,25 @@ SRCS = ft_atoi.c ft_bzero.c ft_calloc.c ft_isalnum.c ft_isalpha.c \
        ft_strlcat.c ft_strlcpy.c ft_strlen.c ft_strncmp.c ft_strnstr.c \
        ft_strrchr.c ft_tolower.c ft_toupper.c ft_strjoin.c ft_substr.c \
 	   ft_strtrim.c ft_split.c ft_itoa.c ft_striteri.c ft_strmapi.c \
-	   ft_putchar_fd.c ft_putstr_fd.c ft_putendl_fd.c ft_putnbr_fd.c \
-	   
+	   ft_putchar_fd.c ft_putstr_fd.c ft_putendl_fd.c ft_putnbr_fd.c
+SRCSB =  ft_lstnew_bonus.c ft_lsadd_front_bonus.c
 
+OBJSB = $(SRCSB:.c=.o)
 OBJS = $(SRCS:.c=.o)
-
 CC = cc
 RM = rm -f
 CFLAGS = -Wall -Wextra -Werror
-
 NAME = libft.a
 
 all: $(NAME)
 
+bonus: $(OBJSB)
+
 $(NAME): $(OBJS)
-	ar rcs $(NAME) $(OBJS)
+
+%.o :%.c libft.h
+	$(CC) $(CFLAGS) -c $< -o $@
+	ar rcs $(NAME) $@
 
 clean:
 	$(RM) $(OBJS)
@@ -38,9 +42,6 @@ clean:
 fclean: clean
 	$(RM) $(NAME)
 
-re: fclean $(NAME)
-
-bonus: $(OBJS)
-	ar rcs $(NAME) $(OBJS)
+re: fclean all
 
 .PHONY: all clean fclean re bonus
