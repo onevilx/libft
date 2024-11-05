@@ -6,7 +6,7 @@
 /*   By: yaboukir <yaboukir@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/25 11:09:36 by yaboukir          #+#    #+#             */
-/*   Updated: 2024/11/04 21:16:57 by yaboukir         ###   ########.fr       */
+/*   Updated: 2024/11/05 15:06:47 by yaboukir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,7 +39,10 @@ char		*ft_strmapi(char const *s, char (*f)(unsigned int, char));
 char		*ft_substr(char const *s, unsigned int start, size_t len);
 char		*ft_strnstr(const char *haystack, const char *needle, size_t len);
 void		ft_bzero(void *s, size_t n);
+void		ft_putnbr_fd(int n, int fd);
+void		ft_putstr_fd(char *s, int fd);
 void		ft_putchar_fd(char c, int fd);
+void		ft_putendl_fd(char *s, int fd);
 void		*ft_calloc(size_t count, size_t size);
 void		*ft_memset(void *b, int c, size_t len);
 void		*ft_memchr(const void *s, int c, size_t n);
