@@ -6,7 +6,7 @@
 /*   By: yaboukir <yaboukir@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/02 18:39:14 by yaboukir          #+#    #+#             */
-/*   Updated: 2024/11/03 16:00:06 by yaboukir         ###   ########.fr       */
+/*   Updated: 2024/11/06 13:56:51 by yaboukir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,25 +22,28 @@ static	int	ft_whitespaces(int c)
 int	ft_atoi(const char *str)
 {
 	size_t	i;
-	size_t	sign;
+	long	sign;
 	size_t	result;
+	size_t	checker;
 
 	i = 0;
 	sign = 1;
 	result = 0;
 	while (ft_whitespaces(str[i]))
 		i++;
-	if (str[i] == '+' && str[i + 1] != '-')
-		i++;
-	else if (str[i] == '-')
+	if (str[i] == '+' || str[i] == '-')
 	{
-		sign = -1;
-		i++;
+		if (str[i++] == '-')
+			sign *= -1;
 	}
 	while (str[i] && str[i] >= '0' && str[i] <= '9')
 	{
-		result = result * 10 + (str[i] - '0');
-		i++;
+		checker = result;
+		result = (result * 10) + (str[i++] - '0');
+		if (checker != (result / 10) && sign == 1)
+			return (-1);
+		if (checker != (result / 10) && sign == -1)
+			return (0);
 	}
 	return (result * sign);
 }
