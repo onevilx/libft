@@ -6,7 +6,7 @@
 /*   By: yaboukir <yaboukir@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/25 11:09:36 by yaboukir          #+#    #+#             */
-/*   Updated: 2024/11/06 22:04:02 by yaboukir         ###   ########.fr       */
+/*   Updated: 2024/11/07 11:05:22 by yaboukir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -55,6 +55,7 @@ void		*ft_calloc(size_t count, size_t size);
 void		*ft_memset(void *b, int c, size_t len);
 void		ft_lstadd_back(t_list **lst, t_list *new);
 void		ft_lstadd_front(t_list **lst, t_list *new);
+void		ft_lstiter(t_list *lst, void (*f)(void *));
 void		*ft_memchr(const void *s, int c, size_t n);
 void		ft_lstclear(t_list **lst, void (*del)(void *));
 void		ft_lstdelone(t_list *lst, void (*del)(void *));
@@ -66,5 +67,6 @@ size_t		ft_strlcpy(char *dst, const char *src, size_t dstsize);
 size_t		ft_strlen(const char *s);
 t_list		*ft_lstlast(t_list *lst);
 t_list		*ft_lstnew(void *content);
+t_list		*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *));
 
 #endif
