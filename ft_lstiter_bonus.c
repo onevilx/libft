@@ -6,7 +6,7 @@
 /*   By: yaboukir <yaboukir@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/07 10:56:28 by yaboukir          #+#    #+#             */
-/*   Updated: 2024/11/07 11:14:12 by yaboukir         ###   ########.fr       */
+/*   Updated: 2024/11/09 11:12:53 by yaboukir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,8 @@ void	ft_lstiter(t_list *lst, void (*f)(void *))
 {
 	t_list	*tmp;
 
+	if (!lst || !f)
+		return ;
 	tmp = lst;
 	while (tmp)
 	{

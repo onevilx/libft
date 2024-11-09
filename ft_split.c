@@ -6,33 +6,11 @@
 /*   By: yaboukir <yaboukir@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/04 11:12:27 by yaboukir          #+#    #+#             */
-/*   Updated: 2024/11/04 13:39:26 by yaboukir         ###   ########.fr       */
+/*   Updated: 2024/11/08 16:24:18 by yaboukir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
-static int	ft_freemal(char **s1, int position, size_t buffer);
-static int	ft_fill(char **s1, const char *s, char c);
-static int	count_word(const char *s, char c);
-
-char	**ft_split(char const *s, char c)
-{
-	size_t	words;
-	char	**s1;
-
-	if (s == NULL)
-		return (NULL);
-	words = 0;
-	words = count_word(s, c);
-	s1 = malloc((words + 1) * sizeof(char *));
-	if (s1 == NULL)
-		return (NULL);
-	s1[words] = NULL;
-	if (ft_fill (s1, s, c))
-		return (NULL);
-	return (s1);
-}
 
 static int	ft_freemal(char **s1, int position, size_t buffer)
 {
@@ -98,4 +76,22 @@ static int	count_word(const char *s, char c)
 		s++;
 	}
 	return (i);
+}
+
+char	**ft_split(char const *s, char c)
+{
+	size_t	words;
+	char	**s1;
+
+	if (s == NULL)
+		return (NULL);
+	words = 0;
+	words = count_word(s, c);
+	s1 = malloc((words + 1) * sizeof(char *));
+	if (s1 == NULL)
+		return (NULL);
+	s1[words] = NULL;
+	if (ft_fill (s1, s, c))
+		return (NULL);
+	return (s1);
 }
