@@ -6,7 +6,7 @@
 #    By: yaboukir <yaboukir@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/10/28 17:43:12 by yaboukir          #+#    #+#              #
-#    Updated: 2024/11/07 11:35:55 by yaboukir         ###   ########.fr        #
+#    Updated: 2024/11/10 15:41:04 by yaboukir         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -25,15 +25,16 @@ OBJS = $(SRCS:.c=.o)
 OBJSB = $(SRCSB:.c=.o)
 CC = cc
 RM = rm -f
-CFLAGS = -Wall -Wextra -Werror -g3 -fsanitize=address
+CFLAGS = -Wall -Wextra -Werror
 NAME = libft.a
 
 all: $(NAME)
 
-bonus: $(OBJSB)
+$(NAME): $(OBJS)
+	ar rcs $(NAME) $(OBJS)
 
-$(NAME): $(OBJS) $(OBJSB)
-	ar rcs $(NAME) $(OBJS) $(OBJSB)
+bonus: $(OBJSB)
+	ar rcs $(NAME) $(OBJSB)
 
 %.o: %.c libft.h
 	$(CC) $(CFLAGS) -c $< -o $@

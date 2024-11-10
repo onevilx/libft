@@ -6,37 +6,27 @@
 /*   By: yaboukir <yaboukir@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/04 15:42:31 by yaboukir          #+#    #+#             */
-/*   Updated: 2024/11/04 18:15:03 by yaboukir         ###   ########.fr       */
+/*   Updated: 2024/11/10 14:26:13 by yaboukir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static char	*pre_conv(int len)
+static size_t	int_len(int nb)
 {
-	char	*tmp;
-
-	tmp = (char *)ft_calloc(1, len + 1);
-	if (!tmp)
-		return (NULL);
-	return (tmp);
-}
-
-static int	int_len(long nbr)
-{
-	int	count;
+	size_t	count;
 
 	count = 0;
-	if (nbr < 0)
+	if (nb == 0)
+		return (1);
+	if (nb < 0)
 	{
-		count++;
-		nbr = -nbr;
+		count = 1;
+		nb = -nb;
 	}
-	if (nbr == 0)
-		count++;
-	while (nbr != 0)
+	while (nb != 0)
 	{
-		nbr /= 10;
+		nb /= 10;
 		count++;
 	}
 	return (count);
@@ -44,29 +34,29 @@ static int	int_len(long nbr)
 
 char	*ft_itoa(int n)
 {
-	char	*result;
-	int		i;
-	int		len;
-	long	nbr;
+	long int	nb;
+	size_t		len;
+	char		*str;
 
-	nbr = n;
-	len = int_len(nbr);
-	result = pre_conv(len);
-	if (!result)
+	nb = n;
+	if (nb == -2147483648)
+		return (ft_strdup("-2147483648"));
+	len = int_len(nb) + 1;
+	str = malloc(len);
+	if (!str)
 		return (NULL);
-	i = len - 1;
-	if (nbr < 0)
+	str[len - 1] = '\0';
+	if (nb == 0)
+		str[0] = '0';
+	else if (nb < 0)
 	{
-		nbr = -nbr;
-		len++;
-		result[0] = '-';
+		str[0] = '-';
+		nb = -nb;
 	}
-	if (nbr == 0)
-		result[0] = '0';
-	while (nbr != 0)
+	while (nb)
 	{
-		result[i--] = ((nbr % 10) + '0');
-		nbr = nbr / 10;
+		str[--len - 1] = (nb % 10) + '0';
+		nb = nb / 10;
 	}
-	return (result);
+	return (str);
 }
