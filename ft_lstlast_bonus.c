@@ -14,12 +14,19 @@
 
 t_list	*ft_lstlast(t_list *lst)
 {
-	t_list	*tmp;
-
 	if (!lst)
 		return (NULL);
-	tmp = lst;
-	while (tmp->next)
-		tmp = tmp->next;
-	return (tmp);
+	while (lst->next)
+		lst = lst->next;
+	return (lst);
 }
+// int main()
+// {
+// 	t_list	*node1 = ft_lstnew("qyjty");
+// 	t_list	*node2 = ft_lstnew("asd");
+// 	t_list	*node3 = ft_lstnew("zxç");
+// 	node1->next = node2;
+// 	node2->next = node3;
+// 	t_list	*res =  ft_lstlast(node1);
+// 	printf("%s\n", res->content);
+// }

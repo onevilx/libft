@@ -6,7 +6,7 @@
 /*   By: yaboukir <yaboukir@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/24 12:20:34 by yaboukir          #+#    #+#             */
-/*   Updated: 2024/11/03 16:59:06 by yaboukir         ###   ########.fr       */
+/*   Updated: 2024/11/11 12:59:20 by yaboukir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,3 +19,8 @@ int	ft_isascii(int c)
 	else
 		return (0);
 }
+/*int	main()
+{
+	printf("%d\n", ft_isascii(128));
+	return 0;
+}*/

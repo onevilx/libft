@@ -6,7 +6,7 @@
 /*   By: yaboukir <yaboukir@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/05 14:42:05 by yaboukir          #+#    #+#             */
-/*   Updated: 2024/11/05 22:09:39 by yaboukir         ###   ########.fr       */
+/*   Updated: 2024/11/14 15:33:57 by yaboukir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,3 +26,9 @@ void	ft_putendl_fd(char *s, int fd)
 	}
 	write(fd, "\n", 1);
 }
+// int main ()
+// {
+// 	int fd;
+// 	fd = open("ktab.txt", O_RDWR | O_CREAT, 0777);
+// 	ft_putendl_fd("look me", fd);
+// }

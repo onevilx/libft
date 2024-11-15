@@ -6,7 +6,7 @@
 /*   By: yaboukir <yaboukir@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/05 11:08:53 by yaboukir          #+#    #+#             */
-/*   Updated: 2024/11/05 22:04:18 by yaboukir         ###   ########.fr       */
+/*   Updated: 2024/11/14 15:25:20 by yaboukir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,3 +25,9 @@ void	ft_putstr_fd(char *s, int fd)
 		i++;
 	}
 }
+// int main()
+// {
+// 	int fd;
+// 	fd = open("mokhatat", O_RDWR | O_CREAT , 0777);
+// 	ft_putstr_fd("waaa", fd);
+// }

@@ -6,7 +6,7 @@
 /*   By: yaboukir <yaboukir@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/28 11:16:19 by yaboukir          #+#    #+#             */
-/*   Updated: 2024/11/03 20:11:54 by yaboukir         ###   ########.fr       */
+/*   Updated: 2024/11/14 14:22:57 by yaboukir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,3 +34,11 @@ char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 	}
 	return (0);
 }
+// int main()
+// {
+// 	const char x[] = "are we too young for this";
+// 	const char y[] = "too";
+// 	size_t len = 25;
+// 	printf("%s\n", ft_strnstr(x, y, len));
+// 	return 0;
+// }

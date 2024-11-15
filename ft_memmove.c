@@ -6,7 +6,7 @@
 /*   By: yaboukir <yaboukir@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/25 22:17:48 by yaboukir          #+#    #+#             */
-/*   Updated: 2024/11/06 13:15:56 by yaboukir         ###   ########.fr       */
+/*   Updated: 2024/11/12 19:37:22 by yaboukir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,3 +36,11 @@ void	*ft_memmove(void *dst, const void *src, size_t len)
 	}
 	return (dst);
 }
+// int main()
+// {
+// 	char str1[] = "is this the end";
+// 	//char str2[5];
+// 	char *res = ft_memmove(NULL, NULL, 0);
+// 	printf("%s\n", res);
+// 	return 0;
+// }

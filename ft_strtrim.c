@@ -6,7 +6,7 @@
 /*   By: yaboukir <yaboukir@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/02 15:12:12 by yaboukir          #+#    #+#             */
-/*   Updated: 2024/11/06 12:50:17 by yaboukir         ###   ########.fr       */
+/*   Updated: 2024/11/13 18:11:16 by yaboukir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,7 +36,7 @@ char	*ft_strtrim(char const *s1, char const *set)
 
 // int main()
 // {
-//     char *str = NULL;
-//     char *set = NULL;
+//     char *str = "haahahaahda7ktini asathhhhhhh";
+//     char *set = "ha";
 //     printf("%s\n", ft_strtrim(str, set));	
 // }

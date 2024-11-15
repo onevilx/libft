@@ -6,7 +6,7 @@
 /*   By: yaboukir <yaboukir@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/05 14:48:57 by yaboukir          #+#    #+#             */
-/*   Updated: 2024/11/05 15:12:21 by yaboukir         ###   ########.fr       */
+/*   Updated: 2024/11/15 22:03:47 by yaboukir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,3 +43,13 @@ void	ft_putnbr_fd(int n, int fd)
 		}
 	}
 }
+// int main()
+// {
+// 	int fd;
+// 	fd = open("putnbr.txt", O_RDWR | O_CREAT, 0777);
+// 	ft_putnbr_fd(-2147483648, fd);
+// 	ft_putchar_fd('\n', fd);
+// 	ft_putnbr_fd(1337, fd);
+// 	ft_putchar_fd('\n', fd);
+// 	ft_putnbr_fd(-42, fd);
+// }

@@ -6,7 +6,7 @@
 /*   By: yaboukir <yaboukir@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/26 18:03:30 by yaboukir          #+#    #+#             */
-/*   Updated: 2024/11/03 21:05:26 by yaboukir         ###   ########.fr       */
+/*   Updated: 2024/11/14 14:03:19 by yaboukir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,3 +31,8 @@ char	*ft_strrchr(const char *s, int c)
 		res = (char *) &s[i];
 	return (res);
 }
+// int main()
+// {
+// 	char str[] = "who is this ?";
+// 	printf("%s\n", ft_strrchr(str, 't'));
+// }

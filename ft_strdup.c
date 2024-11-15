@@ -6,7 +6,7 @@
 /*   By: yaboukir <yaboukir@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/28 12:02:20 by yaboukir          #+#    #+#             */
-/*   Updated: 2024/11/03 17:31:39 by yaboukir         ###   ########.fr       */
+/*   Updated: 2024/11/12 20:41:14 by yaboukir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,3 +29,14 @@ char	*ft_strdup(const char *s1)
 	dest[i] = 0;
 	return (dest);
 }
+/*int main()
+{
+	char dead[] = "to the limits";
+	char *res = ft_strdup(dead);
+	if (res != NULL)
+	{
+	printf("%s\n", res);
+	free(res);
+	}
+	return 0;
+}*/

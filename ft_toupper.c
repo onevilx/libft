@@ -6,7 +6,7 @@
 /*   By: yaboukir <yaboukir@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/26 10:58:48 by yaboukir          #+#    #+#             */
-/*   Updated: 2024/11/03 21:18:29 by yaboukir         ###   ########.fr       */
+/*   Updated: 2024/11/13 09:43:54 by yaboukir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,3 +18,7 @@ int	ft_toupper(int c)
 		return (c - 32);
 	return (c);
 }
+/*int main()
+{
+	printf("%c\n", ft_toupper('x')); 
+}*/

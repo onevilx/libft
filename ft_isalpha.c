@@ -6,7 +6,7 @@
 /*   By: yaboukir <yaboukir@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/24 11:04:48 by yaboukir          #+#    #+#             */
-/*   Updated: 2024/11/03 16:57:38 by yaboukir         ###   ########.fr       */
+/*   Updated: 2024/11/11 12:51:57 by yaboukir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,3 +19,8 @@ int	ft_isalpha(int c)
 	else
 		return (0);
 }
+/*int main()
+{
+	printf("%d\n",ft_isalpha('3'));
+	return 0;
+}*/

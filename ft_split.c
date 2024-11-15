@@ -6,7 +6,7 @@
 /*   By: yaboukir <yaboukir@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/04 11:12:27 by yaboukir          #+#    #+#             */
-/*   Updated: 2024/11/10 14:13:55 by yaboukir         ###   ########.fr       */
+/*   Updated: 2024/11/14 15:58:10 by yaboukir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -85,3 +85,16 @@ char	**ft_split(char const *s, char c)
 	}
 	return (arr);
 }
+// int main(void)
+// {
+// 	system("leaks a.out");
+// 	char *str = "hello khouya youssef lmouiiima";
+// 	char **result = ft_split(str, ' ');
+// 	int i = 0;
+// 	while (result[i])
+// 	{
+// 		printf("%s\n", result[i++]);
+// 		free(result[i]);	
+// 	}
+// 	free(result);
+// }

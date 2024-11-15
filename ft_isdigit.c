@@ -6,7 +6,7 @@
 /*   By: yaboukir <yaboukir@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/24 11:53:33 by yaboukir          #+#    #+#             */
-/*   Updated: 2024/11/03 17:00:14 by yaboukir         ###   ########.fr       */
+/*   Updated: 2024/11/11 13:01:02 by yaboukir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,3 +19,8 @@ int	ft_isdigit(int c)
 	else
 		return (0);
 }
+/*int main()
+{
+	printf("%d\n", ft_isdigit('s'));
+	return 0;
+}*/

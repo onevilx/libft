@@ -6,7 +6,7 @@
 /*   By: yaboukir <yaboukir@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/24 13:53:16 by yaboukir          #+#    #+#             */
-/*   Updated: 2024/11/03 16:52:15 by yaboukir         ###   ########.fr       */
+/*   Updated: 2024/11/11 12:43:51 by yaboukir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,3 +19,8 @@ int	ft_isalnum(int c)
 	else
 		return (0);
 }
+/*int	main()
+{
+	printf("%d\n", ft_isalnum('y'));
+	return 0;
+}*/

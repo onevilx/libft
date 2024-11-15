@@ -6,7 +6,7 @@
 /*   By: yaboukir <yaboukir@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/28 10:14:16 by yaboukir          #+#    #+#             */
-/*   Updated: 2024/11/03 17:05:15 by yaboukir         ###   ########.fr       */
+/*   Updated: 2024/11/14 14:42:21 by yaboukir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,3 +29,14 @@ void	*ft_memchr(const void *s, int c, size_t n)
 	}
 	return (NULL);
 }
+/*int	main()
+{
+	char jomla[] = "tellmeprettylies";
+	char *ba7it;
+	ba7it = ft_memchr(jomla, 'p', sizeof(jomla));
+	if (ba7it)
+		printf("rani l9it akhoya f = %ld\n", ba7it - jomla);
+	else
+	printf("khoya rani mal9itsh\n");
+	return 0;
+}*/

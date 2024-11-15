@@ -6,7 +6,7 @@
 /*   By: yaboukir <yaboukir@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/24 12:06:02 by yaboukir          #+#    #+#             */
-/*   Updated: 2024/11/06 12:14:38 by yaboukir         ###   ########.fr       */
+/*   Updated: 2024/11/13 10:30:58 by yaboukir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,3 +21,9 @@ size_t	ft_strlen(const char *s)
 		len++;
 	return (len);
 }
+/*int main()
+{
+	char str[] = "is this the end!";
+	int res = ft_strlen(str);
+	printf("the length is : %d\n", res);
+}*/

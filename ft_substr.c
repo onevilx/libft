@@ -6,7 +6,7 @@
 /*   By: yaboukir <yaboukir@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/30 10:10:12 by yaboukir          #+#    #+#             */
-/*   Updated: 2024/11/03 21:15:16 by yaboukir         ###   ########.fr       */
+/*   Updated: 2024/11/15 22:01:29 by yaboukir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,3 +34,9 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	}
 	return (str);
 }
+/*int main()
+{
+	char str[] = "ifiloveuwasapromise";
+	printf("%s\n",ft_substr(str, 0, 20));
+	return 0;
+}*/

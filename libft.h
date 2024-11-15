@@ -6,7 +6,7 @@
 /*   By: yaboukir <yaboukir@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/25 11:09:36 by yaboukir          #+#    #+#             */
-/*   Updated: 2024/11/07 11:05:22 by yaboukir         ###   ########.fr       */
+/*   Updated: 2024/11/15 22:02:11 by yaboukir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,8 @@
 # include <unistd.h>
 # include <stddef.h> // just for testing program, it is forbidden ;)
 # include <string.h> // just for testing program, it is forbidden ;)
+# include <limits.h> // just for testing program, it is forbidden ;)
+# include <fcntl.h> // just for testing program, it is forbidden ;)
 
 typedef struct s_list
 {
@@ -67,6 +69,5 @@ size_t		ft_strlcpy(char *dst, const char *src, size_t dstsize);
 size_t		ft_strlen(const char *s);
 t_list		*ft_lstlast(t_list *lst);
 t_list		*ft_lstnew(void *content);
-t_list		*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *));
 
 #endif

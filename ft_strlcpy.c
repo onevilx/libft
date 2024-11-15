@@ -6,7 +6,7 @@
 /*   By: yaboukir <yaboukir@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/25 23:02:46 by yaboukir          #+#    #+#             */
-/*   Updated: 2024/11/03 20:05:01 by yaboukir         ###   ########.fr       */
+/*   Updated: 2024/11/13 17:54:25 by yaboukir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,3 +26,12 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize)
 	}
 	return (src_len);
 }
+// int main()
+// {
+// 	char dst[900];
+// 	char src[] = "beautiful bike tho i mean you should try it";
+
+// 	printf("%zu\n", strlcpy(dst, src, 1));
+// 	printf("Copied string: %s\n", dst);
+// 	return 0;
+// }
