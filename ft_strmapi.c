@@ -6,7 +6,7 @@
 /*   By: yaboukir <yaboukir@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/04 18:33:38 by yaboukir          #+#    #+#             */
-/*   Updated: 2024/11/13 15:38:58 by yaboukir         ###   ########.fr       */
+/*   Updated: 2024/11/21 20:40:59 by yaboukir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	char			*res;
 	size_t			len;
 
-	if (!s)
+	if (!s || !f)
 		return (NULL);
 	len = ft_strlen(s);
 	res = malloc((len + 1) * sizeof(char));

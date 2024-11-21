@@ -6,7 +6,7 @@
 /*   By: yaboukir <yaboukir@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/25 22:17:48 by yaboukir          #+#    #+#             */
-/*   Updated: 2024/11/12 19:37:22 by yaboukir         ###   ########.fr       */
+/*   Updated: 2024/11/21 20:42:24 by yaboukir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,13 +27,7 @@ void	*ft_memmove(void *dst, const void *src, size_t len)
 		while (len-- > 0)
 			tmp_dst[len] = tmp_src[len];
 	else
-	{
-		while (i < len)
-		{
-			tmp_dst[i] = tmp_src[i];
-			i++;
-		}
-	}
+		ft_memcpy(dst, src, len);
 	return (dst);
 }
 // int main()
