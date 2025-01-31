@@ -24,7 +24,7 @@ Example: ft_lstnew, ft_lstadd_front, ft_lstiter, etc.
 ⚙️ Compilation & Usage
 
 🔧 1. Clone the repository
-git clone https://github.com/YOUR_GITHUB_USERNAME/libft.git
+git clone https://github.com/onevilx/libft.git
 cd libft
 
 🔧 2. Compile the library
