@@ -45,18 +45,24 @@ make
 #include "libft.h"
 
 Link it during compilation:
+
 gcc my_program.c -L. -lft -o my_program
 
 🛠️ Testing & Debugging
+
 ✔️ Uses Makefile for compilation
+
 ✔️ Tested with Valgrind for memory leaks
+
 ✔️ Compatible with norminette
 
 📌 Notes
+
 Fully written in C (C99) and adheres to the 42 coding standard.
 No external libraries were used, ensuring compatibility.
 This project serves as a foundation for future projects at 42.
+
 📜 License
+
 This project is open-source under the MIT License.
 
-Let me know if you want further refinements! 🚀
