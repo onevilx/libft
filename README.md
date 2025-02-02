@@ -10,15 +10,19 @@ This project helped me deepen my understanding of memory management, pointers, a
 🔹 Ensures memory efficiency and robustness
 
 📜 Features
+
 ✅ Part 1 – Standard C Library Functions
+
 Reimplementation of common string.h, ctype.h, and stdlib.h functions.
 Example: ft_strlen, ft_memcpy, ft_strncmp, ft_isalpha, etc.
 
 ✅ Part 2 – Additional Utility Functions
+
 Custom functions that simplify working with strings, numbers, and memory.
 Example: ft_split, ft_itoa, ft_strjoin, ft_substr, etc.
 
 ✅ Part 3 – Linked List (t_list) Functions
+
 Implementation of linked list operations such as adding, deleting, and iterating nodes.
 Example: ft_lstnew, ft_lstadd_front, ft_lstiter, etc.
 
