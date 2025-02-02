@@ -4,6 +4,7 @@ Libft is my own implementation of essential C standard library functions, create
 This project helped me deepen my understanding of memory management, pointers, and data structures in C.
 
 📂 Project Overview
+
 🔹 Rewrites standard C library functions (memcpy, strdup, atoi, etc.)
 🔹 Provides additional utility functions (ft_split, ft_itoa, etc.)
 🔹 Implements linked list functions (t_list for dynamic data structures)
