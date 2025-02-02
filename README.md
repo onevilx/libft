@@ -6,8 +6,11 @@ This project helped me deepen my understanding of memory management, pointers, a
 📂 Project Overview
 
 🔹 Rewrites standard C library functions (memcpy, strdup, atoi, etc.)
+
 🔹 Provides additional utility functions (ft_split, ft_itoa, etc.)
+
 🔹 Implements linked list functions (t_list for dynamic data structures)
+
 🔹 Ensures memory efficiency and robustness
 
 📜 Features
