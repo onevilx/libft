@@ -34,11 +34,7 @@ Example: ft_lstnew, ft_lstadd_front, ft_lstiter, etc.
 
 🔧 1. Clone the repository
 
-git clone https://github.com/onevilx/libft.git
-
-then
-
- cd libft
+git clone https://github.com/onevilx/libft.git && cd libft
 
 🔧 2. Compile the library
 
