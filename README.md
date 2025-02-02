@@ -33,8 +33,9 @@ Example: ft_lstnew, ft_lstadd_front, ft_lstiter, etc.
 ⚙️ Compilation & Usage
 
 🔧 1. Clone the repository
+
 git clone https://github.com/onevilx/libft.git
- 
+then
  cd libft
 
 🔧 2. Compile the library
